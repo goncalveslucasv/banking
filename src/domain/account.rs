@@ -17,7 +17,7 @@ impl Account {
 
     pub fn perform_movement(&self, movement: Movement) -> Result<Self, String> {
         let new_balance = self.balance.increase(movement.obtain_amount());
-        if new_balance.amount() < 0.0 {
+        if new_balance.amount() < 2.0 {
             return Err(String::from("Some error"));
         }
         let new_movements= {
@@ -29,8 +29,34 @@ impl Account {
         Ok(Self { balance: new_balance, movements: new_movements,..self.clone()})
     }
 
+    
     pub fn balance(self) -> f32 {
         self.balance.amount()
+    }
+
+    pub fn balanceOne(self) -> f32 {
+        self.balance.amount() + 1
+    }
+    
+    pub fn balanceTwo(self) -> f32 {
+        self.balance.amount() + 2
+    }
+
+    pub fn balanceThree(self) -> f32 {
+        self.balance.amount() + 3
+    }
+
+    pub fn balanceFour(self) -> f32 {
+        self.balance.amount() + 4
+    }
+
+    pub fn testify(self) -> String {
+        return String::from("hola mundo")
+    }
+
+    
+    pub fn testify2(self) -> String {
+        return String::from("hola mundo")
     }
 }
 
