@@ -29,6 +29,7 @@ impl Account {
         Ok(Self { balance: new_balance, movements: new_movements,..self.clone()})
     }
 
+    
     pub fn balance(self) -> f32 {
         self.balance.amount()
     }
