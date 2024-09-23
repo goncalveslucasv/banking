@@ -33,7 +33,6 @@ impl Account {
         self.balance.amount()
     }
 
-    
     pub fn balanceOne(self) -> f32 {
         self.balance.amount() + 1
     }
