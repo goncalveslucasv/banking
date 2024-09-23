@@ -33,6 +33,23 @@ impl Account {
         self.balance.amount()
     }
 
+    
+    pub fn balanceOne(self) -> f32 {
+        self.balance.amount() + 1
+    }
+    
+    pub fn balanceTwo(self) -> f32 {
+        self.balance.amount() + 2
+    }
+
+    pub fn balanceThree(self) -> f32 {
+        self.balance.amount() + 3
+    }
+
+    pub fn balanceFour(self) -> f32 {
+        self.balance.amount() + 4
+    }
+
     pub fn testify(self) -> String {
         return String::from("hola mundo")
     }
