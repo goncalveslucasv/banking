@@ -36,6 +36,11 @@ impl Account {
     pub fn testify(self) -> String {
         return String::from("hola mundo")
     }
+
+    
+    pub fn testify2(self) -> String {
+        return String::from("hola mundo")
+    }
 }
 
 #[cfg(test)]
